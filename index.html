@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pierre Germain — Drupal developer, technology, projects and random stuff.">
+    <meta name="version" content="3">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>pierre</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,7 +17,7 @@
         body {
             background: #000;
             color: #0f0;
-            font-family: 'Courier New', monospace;
+            font-family: 'IBM Plex Mono', monospace;
             line-height: 1.6;
             padding: 1rem;
             min-height: 100vh;
@@ -53,6 +57,9 @@
             color: #0a0;
             font-size: 1.1rem;
         }
+        .tag {
+            color: #ff8c00;
+        }
         @media (max-width: 600px) {
             body {
                 padding: 0.5rem;
@@ -64,12 +71,12 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <h1>pierre.log</h1>
         <p>write. code. think.</p>
 
         <div class="post">
-            <div class="date">2026.08.29 [ORG]</div>
+            <div class="date">2026.08.29 <span class="tag">[ORG]</span></div>
             <h2>google tasks → todoist</h2>
             <p>google tasks is weak. no power. no one at google uses it either. todoist is the real tool.</p>
             <p>how to migrate:</p>
@@ -81,7 +88,7 @@
         </div>
 
         <div class="post">
-            <div class="date">2026.08.27 [MUZ]</div>
+            <div class="date">2026.08.27 <span class="tag">[MUZ]</span></div>
             <h2>where to buy FLAC</h2>
             <p style="opacity: 0.7;">context: peña asks me where to buy music legally sometimes. i always say the same thing — search for no DRM. truth is, buying legal is harder than pirating. big streaming companies don't really want you to own files — they want monthly subscriptions. that's the game. so here are some real alternatives. bandcamp no question.</p>
             <p><a target="_blank" href="https://bandcamp.com/">bandcamp</a> — the way. artists get paid. lossless everywhere.</p>
@@ -101,6 +108,6 @@
         <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #0a0; opacity: 0.6; font-size: 1rem;">
             <p><strong>how this works:</strong> single HTML file. no build. no framework. CSS embedded. posts are divs. git + GitHub Pages. minimal. fast. yours to read and copy.</p>
         </div>
-    </div>
+    </main>
 </body>
 </html>
